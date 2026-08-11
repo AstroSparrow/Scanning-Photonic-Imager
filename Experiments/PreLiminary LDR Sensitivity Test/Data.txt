@@ -1,0 +1,14 @@
+LDR Sensitivity Test:
+
+LDR 1: Normal: 960; Max: 1019; Low: 76
+LDR 2: Normal: 918; Max: 1017; Low: 70
+LDR 3: Normal: 935; Max: 1018; Low: 30
+LDR 4: Normal: 934
+LDR 5: Normal: 909
+LDR 6: Normal: 930
+LDR 7: Normal: 894
+LDR 8: Normal: 931
+LDR 9: Normal: 926
+LDR 10: Normal: 968
+
+(Gave up on taking Low and Max readings for the other LDR's cause of irregular flashing/blocking of lighting conditions for each LDR)
