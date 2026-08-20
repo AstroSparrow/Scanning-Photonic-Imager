@@ -16,7 +16,9 @@ So, I jotted down the idea in my "Ideas list" and basically forgot about it for 
 
 Now, Me being an amateur hobbyist, I cannot work with Millions or even Thousands of Light Sensors in arrays (Money and skill issue, I know) + I didn't wanna use an actual Camera sensor, as that would defeat the entire point of testing this idea...
 
-Then i thought of using just a Single Set of Light sensors and physically move it in a way to scan the required Field of View (FOV) of the scene, Cause a Single Set of Light sensors would be incredibly cheap to work with and the only downside was that constructing an image this way would take much more time than a Normal Sensor would, But as a proof of concept, Time taken per image is no constraint at all! (It could take years to make one and i wouldn't care less! Ok, not that long...), So Servos also became a part of the project this way (Forcing me to study a bit of Inverse Kinematics :/)
+Then i thought of using just a Single Set/Array of Light sensors and physically move it in a way to scan the required Field of View (FOV) of the scene, Cause a Single Set of Light sensors would be incredibly cheap to work with.
+The only downside was that constructing an image this way would take much more time than a Normal Sensor would, But as a proof of concept, Time taken per image is no constraint at all! (It could take years to make one and i wouldn't care less! Ok, not that long...)
+So Servos also became a part of the project this way (Forcing me to study a bit of Inverse Kinematics :/)
 
 I eventually committed to making the project a reality (And had to make way too many visits to the hardware store to buy the components for it)
 
@@ -28,30 +30,37 @@ Fun fact: I came up with the name Scanning Photonic Imager by basically combinin
 (I apologize for the long yap of a Backstory i just unleashed here btw)
 
 ----
+## Repo Index
+- **You can get more info on the project from the `Docs` folder**
+- **All the code files used in this Project are available in the `Code` folder**
+- **Documentation and Results from the completed "Tests" are available in the `Experiments` folder**
+
+
 ## Currently Working on
-**Calibrating the Light sensors for RGB**
+**4. Calibrating the Light sensors for the Colour Filters**
 
 ## Current Roadmap
 1. [x] Get the Necessary Components
 2. [x] Perform a PreLiminary Light Sensor Sensitivity Test
-3. [ ] Calibrate the Light sensors for Red, Green, and Blue colours
-4. [ ] Write the Python program to construct an image
-5. [ ] Capture the first Pixel
-6. [ ] Implement X-Axis movement
-7. [ ] Scan a 1-D Array of Pixels
-8. [ ] Implement Y-Axis movement
-9. [ ] Scan a 2-D Array of Pixels
-10. [ ] Produce the First Grayscale Image
-11. [ ] Produce the First Coloured Image
-12. [ ] Implement Depth Scanning
-13. [ ] Implement UV and IR Scanning
+3. [x] Test Filtering response of the Colour Filters
+4. [ ] Calibrate the Light sensors for RGB Colour Detection
+5. [ ] Write the Python program to construct an image
+6. [ ] Capture the first Pixel
+7. [ ] Implement X-Axis movement
+8. [ ] Scan a 1-D Array of Pixels
+9. [ ] Implement Y-Axis movement
+10. [ ] Scan a 2-D Array of Pixels
+11. [ ] Produce the First Grayscale Image
+12. [ ] Produce the First Coloured Image
+13. [ ] Implement Depth Scanning
+14. [ ] Implement UV and IR Scanning
 
 More to come soon...
 
 
 ## License
-This project is licensed under the MIT License. I would be honoured to receive any Suggestions for SPI :)
+This project is licensed under the MIT License. 
+Suggestions, Ideas, and Feedback are always Welcome! :)
 
-- **You can get more info on the Current progress of the project in the Experiments folder**
 
 **_Thanks a ton for your time! :D_**

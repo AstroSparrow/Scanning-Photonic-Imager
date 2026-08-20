@@ -1,0 +1,23 @@
+So, For SPI, I had 3 options of Light sensors available:
+
+1. CdS Light Dependent Resistors
+2. Reverse Biased Light Emitting Diodes
+3. Photo Diodes
+
+-I ruled out using Photo Diodes pretty early on in the planning of the Project. Good quality, High Field of View (FOV) Photo Diodes are pretty expensive to buy (Especially since i had to use atleast 4 of them) and were only availible on Online stores (Which i do not trust much for Hobbyist Electronics).
+Plus i would have to use external Colour Filters for them to work for SPI (Which is a major downside due to the Quality of the colour filters i had available) cause they don't have their own Colour Filtering.
+
+- I could use simple LEDs and Reverse Bias them to calculate the Photocurrent they produce when struck with the Light of their specific Wavelength (Colour) [This option does not require any other Colour filters, as LEDs are generally most sensitive to their own Colour of Light].
+The problem with this type of setup is that the Photocurrents produced by a Reverse Bias LED are extremely tiny (On the order of microamps), So it is not possible to sense such a weak signal without some sort of Amplification.
+I really wanted to use this setup but tbh, I didn't cause i for the love of my life couldn't figure out how to utilise Op-Amps or any other sort of Amplification for this Approach (Major Skill issue on my side, My apologies) :/
+
+- I could use CdS (Cadmium Sulfide) based LDRs (Light Dependent Resistors) to detect how much light is hitting each LDR and move forward with that Data.
+LDR's have a pretty wide FOV + They are dirt cheap to buy and use!
+The problem with this type of Setup again being that LDRs are not sensitive to only a narrow range of colours, They are sensitive to all Light, But we care only to sense the brightness of Red, Green and Blue to construct the images.
+So i had to introduce some Light Filters that only allow Specific colours of light to be "sensed" by the LDR.
+
+
+So, Out of All these options, I eventually settled on using the LDR approach with Red, Green and Blue Gelatin Sheets acting as their Colour Filters
+(I know, I know... Gelatin Sheets are not the best Colour Filters to use here, But i didn't have any other similarly priced/available options)
+
+I plan to give a shot with LED's once again in the future  tho!

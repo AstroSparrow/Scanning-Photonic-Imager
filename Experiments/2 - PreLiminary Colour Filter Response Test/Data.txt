@@ -1,0 +1,41 @@
+Pre-Liminary Colour Filter Response Test
+(Using LDR #5 and a Phone Screen displaying pure Colours at full Brightness)
+
+LDR Responses (As reported by the Arduino Nano ADC):
+
+No Screen/No Filter (Ambient Light): 690
+Red Screen/No Filter: 512
+Green Screen/No Filter: 610
+Blue Screen/No Filter: 508
+
+No Screen/Red Filter (Ambient Light): 404
+Red Screen/Red Filter: 374
+Green Screen/Red Filter: 284
+Blue Screen/Red Filter: 260
+
+No Screen/Green Filter (Ambient Light): 352
+Red Screen/Green Filter: 262
+Green Screen/Green Filter: 356
+Blue Screen/Greeb Filter: 260
+
+No Screen/Blue Filter (Ambient Light): 301
+Red Screen/Blue Filter: 190
+Green Screen/Blue Filter: 220
+Blue Screen/Blue Filter: 320
+
+
+[Extra Fun Stuff :D]
+
+No Screen/All Filters (Ambient Light): 170
+(Probably above 0 or Negligible cause of residual Reflections from beaneath the Gelatin Sheets)
+
+No Screen/Yellow Filter (Ambient Light): 410
+Red Screen/Yellow Filter: 361
+Green Screen/Yellow Filter: 376
+Blue Screen/Yellow Filter: 208
+Yelow Screen/Yellow Filter: 461
+Magenta Screen/Yellow Filter: 357
+Cyan Screen/Yellow Filter: 383
+
+White Screen/No Filters: 690
+Black Screen/No Filters: 170

@@ -1,0 +1,31 @@
+(Date: 20th of August, 2026)
+
+So, In this test, I had to measure the response of a chosen LDR (In this case LDR #5 from the previous Experiment) Illuminated by my Phone's Screen displaying Pure Colours at full Brightness through the Red, Green and Blue Gelatin Colour Filters.
+I used a 10KΩ resistor to act as a voltage divider for A2 pin on the Nano (The Circuit Schematic is almost the same as the Last experiment's one)
+
+The 'LDR_Analog_Value_Reader.ino' is also the uploaded sketch on the Arduino Nano for this test.
+
+I tried my best to keep the LDR position and angle the same between the Colour and Filter changes while keeping the Phone Screen at full brightness pressed flat to the Colour Filter.
+The entire setup was held up in the air by my hand with approximately a 1cm Gap between the Filter and the LDR
+
+For All the 3 (Well 4), There were 4 Layers of filter (3 times folded) between the Screen and the LDR 
+
+This was a crude PreLiminary test to gauge the response of each of the Colour Filters, I did this test in my Bedroom which is not a perfectly Light controlled environment (I don't have a lab... Yet!).
+The Screen Angles were also not completely the same between the Colours.
+Plus, Gelatin sheets aren't perfect Colour filters, So they also let other colours leak into each other (I only had access to Gelatin sheets as my colour filter due to cost and availability constraints).
+
+So again like the other test, We can assume a ±10 ADC Count for the LDR Readings for each of the Colour Filter.  
+(The Data is availible as 'Data.txt' in the same folder btw)
+
+(Note: The Ambient LDR response is stronger than the Screen Responses because the LDR was pointed at my roof which is white coloured and was reflecting light from outside during the day, Compared to that, The Phone's screen through 4 layers of Gelatin Sheets is dimmer, Thus the Reduced ADC Values)
+
+I did some tests with the Yellow Gelatin Sheet too + With no filters and All the filters for Funsies!
+
+I also wanted to do some tests combining the Gelatin sheets (like Red + Green or Blue + Red etc) and then measure their corresponding LDR responses
+But i figured that each filter i add on top will introduce 4 more layers of an imperfect filter which will block more and more of light that should ideally would've passed through, Thus producing negligible results
+So, I scraped that idea...
+
+Now, According to the Data gathered, There is a noticeable difference in the ADC Readings for the corresponding Colour and it's Filter. Proving my colour sensing idea works!
+
+I am honestly so excited and relieved that this Proof of Concept for the project worked!! Cause the entire project (Or Atleast it's colour sensing part) was basically relying on this one experiment to produce meaningful results.
+And Thankfully it did! So, Now we can calibrate some weights in the Code now to distinguish between the colours better and go ahead with the Project!! :D

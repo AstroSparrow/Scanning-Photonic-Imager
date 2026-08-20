@@ -1,4 +1,4 @@
-const int LDR = A0;
+const int LDR = A2;
 
 void setup() {
   // put your setup code here, to run once:
