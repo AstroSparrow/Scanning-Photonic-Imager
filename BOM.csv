@@ -1,0 +1,10 @@
+Part,Type,Quantity,Unit price (INR),Line total (INR),Link,Vendor,Funding,Notes
+MG90 Servo Motor,Part,1,159.00,159.00,https://robocraze.com/products/mg90s-servo-motor?_pos=1&_sid=32c8a2bdf&_ss=r,Robocraze,Grant,Y-Axis and X-Rotation Movement
+Linear Servo,Part,1,329.00,329.00,https://www.amazon.in/Adjustable-Actuator-Robotics-Projects-Included/dp/B0FVGG73PC?mcid=08a092e7d90133cf8686c9bfe97b2fac&tag=googleshopdes-21&linkCode=df0&hvadid=709963085501&hvpos&hvnetw=g&hvrand=8525069868277177897&hvpone&hvptwo&hvqmt&hvdev=c&hvdvcmdl&hvlocint&hvlocphy=1007808&hvtargid=pla-2472196376130&hvcampaign=21596143144&psc=1&hvocijid=8525069868277177897-B0FVGG73PC-&hvexpln=0,Amazon,Grant,Linear X-Axis Movement
+Photodiode,Part,6,90.00,540.00,https://vishaworld.com/products/bpw34-pin-photodiode?variant=40118692184244&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic,Vishaworld,Grant,Primary Sensors
+Arduino Nano R3,Part,1,229.00,229.00,https://robocraze.com/products/nano-development-board-compatible-with-arduino?_pos=14&_sid=9fd428341&_ss=r,Robocraze,Already own,Main Microcontroller
+SMPS 12v Powersupply,Part,1,685.00,685.00,https://robocraze.com/products/12v-10a-smps-power-supply?_pos=5&_sid=53cb19bf8&_ss=r,Robocraze,Grant,Primary Powersupply
+Colour Filter Set,Part,1,899.00,899.00,https://www.amazon.in/SHOPEE-Filter-Accessory-Yellow-Orange/dp/B078NGTJZ4,Amazon,Grant,colour Filters
+MG90 Servo Motor,Part,1,159.00,159.00,https://robocraze.com/products/mg90s-servo-motor?_pos=1&_sid=32c8a2bdf&_ss=r,Robocraze,Already own,Y-Axis and X-Rotation Movement
+Total,,,,3000.00,,,,
+Grant total,,,,2612.00,,,,
