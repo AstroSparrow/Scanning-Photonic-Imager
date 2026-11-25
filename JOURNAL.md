@@ -1,13 +1,12 @@
 ---
-title: Scanning Photonic Imager
-github: https://github.com/AstroSparrow/Scanning-Photonic-Imager
-description: An Experimental Arduino-based Scanning Imager that uses an Array of moving Light Sensors assembly to construct an Image!
-created_at: "2026-11-22"
-total_time: "8h"
+title: "Scanning Photonic Imager"
+github: "https://github.com/AstroSparrow/Scanning-Photonic-Imager"
+description: "A weird Experimental Thingy i am making to explore how Camera Sensors work. But I'll be using just a couple of Light Dependant Resistors and some Servo Motors!"
+created_at: "2026-11-24"
+total_time: "12h"
 ---
 
-# November 24, 2026: 1 - PreLiminary LDR Sensitivity Test
-<!-- fabricate:entry 3852 -->
+# November 24, 2026: 1 -  PreLiminary LDR Sensitivity Test
 
 ## **Data:**
 `LDR 1: Normal: 960; Max: 1019; Low: 76
@@ -55,7 +54,6 @@ Time for the RGB Filter Calibration test next!
 **Total time spent: 2h**
 
 # November 25, 2026: 2 - PreLiminary Colour Filter Response Test
-<!-- fabricate:entry 3854 -->
 
 ## **Data**
 Pre-Liminary Colour Filter Response Test
@@ -136,3 +134,63 @@ And Thankfully it did! So, Now we can calibrate some weights in the Code now to 
 ![](https://fabricate.hackclub-assets.com/b02618a27b92e32b2736c69080ceb7e749324e3a3003a90baa29df337a312598/image-jpeg/RGB%20Filters%20on%20my%20Tab%27s%20Screen.jpg)
 
 **Total time spent: 4h**
+
+# November 25, 2026: My reasoning behind choosing LDRs as the Main Light Sensors
+
+(Date: August 20th, 2026)
+So, For SPI, I had 3 options of Light sensors available:
+
+1. CdS Light Dependent Resistors
+2. Reverse Biased Light Emitting Diodes
+3. Photo Diodes
+
+-I ruled out using Photo Diodes pretty early on in the planning of the Project. Good quality, High Field of View (FOV) Photo Diodes are pretty expensive to buy (Especially since i had to use atleast 4 of them) and were only availible on Online stores (Which i do not trust much for Hobbyist Electronics).
+Plus i would have to use external Colour Filters for them to work for SPI (Which is a major downside due to the Quality of the colour filters i had available) cause they don't have their own Colour Filtering.
+
+- I could use simple LEDs and Reverse Bias them to calculate the Photocurrent they produce when struck with the Light of their specific Wavelength (Colour) [This option does not require any other Colour filters, as LEDs are generally most sensitive to their own Colour of Light].
+The problem with this type of setup is that the Photocurrents produced by a Reverse Bias LED are extremely tiny (On the order of microamps), So it is not possible to sense such a weak signal without some sort of Amplification.
+I really wanted to use this setup but tbh, I didn't cause i for the love of my life couldn't figure out how to utilise Op-Amps or any other sort of Amplification for this Approach (Major Skill issue on my side, My apologies) :/
+
+- I could use CdS (Cadmium Sulfide) based LDRs (Light Dependent Resistors) to detect how much light is hitting each LDR and move forward with that Data.
+LDR's have a pretty wide FOV + They are dirt cheap to buy and use!
+The problem with this type of Setup again being that LDRs are not sensitive to only a narrow range of colours, They are sensitive to all Light, But we care only to sense the brightness of Red, Green and Blue to construct the images.
+So i had to introduce some Light Filters that only allow Specific colours of light to be "sensed" by the LDR.
+
+
+So, Out of All these options, I eventually settled on using the LDR approach with Red, Green and Blue Gelatin Sheets acting as their Colour Filters
+(I know, I know... Gelatin Sheets are not the best Colour Filters to use here, But i didn't have any other similarly priced/available options)
+
+I plan to give a shot with LED's once again in the future tho!
+
+![](https://fabricate.hackclub-assets.com/faf08f91396891e9cde28c9e9ab6858c127794f8ae843a6d1d5e32718447c843/image-jpeg/IMG_20261125_103658.jpg)
+
+**Total time spent: 1h**
+
+# November 25, 2026: How i Plan to use a single set of LDR's as a Image Sensor
+
+Now, I am an amateur hobbyist (And a Teenager at that too), So naturally i dont have access to work with Millions or even Thousands of Light Sensors that i could arrange in arrays (Money and skill issue, I know) + I didn't really wanna use an actual Camera sensor, as that would defeat the entire point of testing this Experimental Setup yk.
+
+Then i thought of using a Single Set/Array of (Improvised) Light sensors and then physically move them in a way that i could scan the required Field of View (FOV) of the scene in front of them.
+This would prove to be much cheaper to work with (Cheaper Money-wise, But Harder to implement Skill-wise).
+
+The only other downside of this would be that constructing an image this way would take much more time than a Normal Sensor would cause we have to move 1 "Sensing Pixel" to different positions, Then Read the Data, Send them to the Computer to be Compiled, Move the Sensor assembly to the new position and repeat. But as a proof of concept, This shouldn't be much of an issue (Hopefully).
+
+So, I had to get Servo Motors involved into the Project for Precise Movement (Again, Couldn't afford to have multiple Stepper Motors instead). This meant i had to get my hands dirty with some Inverse Kinematics (Which should be fun to study.... right?)
+
+So, The Design i have in Mind will use 4 Servo Motors:
+- 1 Servo Controlling the Y-Axis Movement
+- 1 Servo Sitting on the Edge of the Y-Axis Control Beam to Counteract the Y-Axis Rotation and keep the Sensor Assembly Perfectly Horizontal
+- 1 Servo Controlling the Linear Movement of the Sensor Assembly via some Linear Movement Apparatus like Guide Rods, Rack and Pinion Arrangement etc 
+- 1 Servo Controlling the X-Axis Rotation of the Sensor Assembly
+(There are some Screenshots for the Crude Design of SPI attached Below)
+
+
+I have Tried to operate the Servo Motors using just the Small Arduino Nano's Power Output. And well as expected, the Nano fell short by a long shot. So, In the further steps, I will have to use a SMPS Power Supply that can provide a Substantial Current, Which will be further regulated by a DC-DC Buck Converter!
+
+I am so excited to finally make this Project actually Move!
+
+![](https://fabricate.hackclub-assets.com/43b4f6ed6402ddfb7116f80ae99b093dd9a7f20eb3515a5412096c06d92a185d/image-png/SPI%20Design%20%232.png)
+![](https://fabricate.hackclub-assets.com/36415e7274e3941df4433019f30d7ed5f906a3905d175570399502be2cffde9e/image-png/SPI%20Design.png)
+![](https://fabricate.hackclub-assets.com/f7db8fd5b52d60747ab6ce839776915a1ec9ef3d29785ed9ad200fda4ba060b1/image-png/Screenshot%202026-11-25%20173330.png)
+
+**Total time spent: 5h**
