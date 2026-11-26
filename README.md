@@ -1,4 +1,14 @@
 # Scanning-Photonic-Imager (SPI)
+
+<p align="center">
+    <img
+        src="Images/SPI_Banner_Image.png"
+        alt="Scanning Photonic Imager - Project Banner"
+        title="Scanning Photonic Imager - Project Banner"
+        width="600"
+    >
+</p>
+
 (An Experimental Arduino-based Project i am currently in the process of Making...)
 
 **STATUS: In-Progress**
