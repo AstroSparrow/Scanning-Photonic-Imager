@@ -1,13 +1,16 @@
 Part,Type,Quantity,Unit price (INR),Line total (INR),Link,Vendor,Funding,Notes
-MG90 Servo Motor,Part,3,159.00,477.00,https://robocraze.com/products/mg90s-servo-motor?_pos=1&_sid=32c8a2bdf&_ss=r,Robocraze,Grant,2 Dimensional Movement
+MG90 Servo Motor,Part,3,159.00,477.00,https://robocraze.com/products/mg90s-servo-motor?_pos=1&_sid=32c8a2bdf&_ss=r,Robocraze,Grant,Y-Axis and X-Rotation Movement
 Arduino Nano R3,Part,1,229.00,229.00,https://robocraze.com/products/nano-development-board-compatible-with-arduino?_pos=14&_sid=9fd428341&_ss=r,Robocraze,Already own,Main Microcontroller
-SMPS 12v Powersupply,Part,1,685.00,685.00,https://robocraze.com/products/12v-10a-smps-power-supply?_pos=5&_sid=53cb19bf8&_ss=r,Robocraze,Grant,Primary Powersupply
+SMPS 12v 10A Powersupply,Part,1,685.00,685.00,https://robocraze.com/products/12v-10a-smps-power-supply?_pos=5&_sid=53cb19bf8&_ss=r,Robocraze,Grant,Primary Powersupply
 Colour Filter Set,Part,1,899.00,899.00,https://www.amazon.in/SHOPEE-Filter-Accessory-Yellow-Orange/dp/B078NGTJZ4,Amazon,Grant,Better Colour Filters for the Project than Gelatin Sheets
-MG90 Servo Motor,Part,1,159.00,159.00,https://robocraze.com/products/mg90s-servo-motor?_pos=1&_sid=32c8a2bdf&_ss=r,Robocraze,Already own,2 Dimensional Movement
-DC-DC Buck Converter,Part,1,259.00,259.00,https://robocraze.com/products/12a-300w-dc-dc-buck-converter-step-down-power-module-7-32v-to-0-8-28v?_pos=1&_sid=d64e1d3f3&_ss=r,Robocraze,Grant,SMPS to Other Circutry Power Delivery
+MG90 Servo Motor,Part,1,159.00,159.00,https://robocraze.com/products/mg90s-servo-motor?_pos=1&_sid=32c8a2bdf&_ss=r,Robocraze,Already own,Y-Axis and X-Rotation Movement
+12A DC-DC Buck Converter,Part,1,259.00,259.00,https://robocraze.com/products/12a-300w-dc-dc-buck-converter-step-down-power-module-7-32v-to-0-8-28v?_pos=1&_sid=d64e1d3f3&_ss=r,Robocraze,Grant,SMPS to Other Circutry Power Delivery
 Linear Guide Rods,Part,2,149.00,298.00,https://robocraze.com/products/6mm-smooth-rod-300mm-stainless-steel-linear-shaft?_pos=1&_sid=bdcfc6bc9&_ss=r,Robocraze,Grant,Guide Rods for the Linear Servo
-Linear Motion Bearings Pack of 4,Part,1,299.00,299.00,https://www.amazon.in/Bearings-Chromium-Bushings-Circuits-Applications/dp/B0FGFBFKGN,Amazon,Grant,Guide Rods Support
 Light Dependent Resistors,Part,10,36.00,360.00,https://robocraze.com/products/light-sensitive-photoresistor-ldr-small?_pos=2&_sid=465a049b7&_ss=r,Robocraze,Already own,Current Main Light Sensors that the Design is Built Around
-3D Printed Parts,3D printed,1,448.00,448.00,https://robu.in/product/3d-printing-service1/,Robu.in,Grant,The Main Structural Parts for the Project + Rack and Pinion Mechanism + Linear Carriage
-Total,,,,4113.00,,,,
-Grant total,,,,3365.00,,,,
+3D Printed Parts for the Project,3D printed,1,448.00,448.00,https://robu.in/product/3d-printing-service1/,Robu.in,Grant,The Main Structural Parts of the Project
+Jumper Wires,Part,,,,,Local Store,Already own,The Wires for the Project
+Breadboard,Part,1,39.00,39.00,https://robocraze.com/products/half-breadboard?_pos=1&_sid=089c80162&_ss=r,Robocraze,Already own,"The ""PCB"" Equivalent for my Project"
+LM2596 DC-DC Buck Converter,Part,1,126.00,126.00,https://robocraze.com/products/lm2596-dc-dc-step-down-buck-module-with-display?_pos=2&_psq=DC-DC+Buck&_psid=40f60f8ba&_ss=e,Robocraze,Already own,"The Buck Converter i own, That isn't sufficient for the Project anymore"
+Gelatin Sheets,Part,4,10.00,40.00,,Local Store,Already own,My old (Inefficient) Colour Filters
+Total,,,,4019.00,,,,
+Grant total,,,,3066.00,,,,

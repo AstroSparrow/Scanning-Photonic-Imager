@@ -2,11 +2,11 @@
 title: "Scanning Photonic Imager"
 github: "https://github.com/AstroSparrow/Scanning-Photonic-Imager"
 description: "A weird Experimental Thingy i am making to explore how Camera Sensors work. But I'll be using just a couple of Light Dependant Resistors and some Servo Motors!"
-created_at: "2026-11-24"
+created_at: "2026-07-22"
 total_time: "12h"
 ---
 
-# November 24, 2026: 1 -  PreLiminary LDR Sensitivity Test
+# August 11, 2026: 1 -  PreLiminary LDR Sensitivity Test
 
 ## **Data:**
 `LDR 1: Normal: 960; Max: 1019; Low: 76
@@ -24,7 +24,6 @@ LDR 10: Normal: 968`
 
 
 ## **Notes:**
-**(Date: 11th of August, 2026)**
 
 To measure the response of each LDR, I used a 10KΩ resistor to act as a voltage divider for A0 pin on the Nano.
 Only the LDR's were swapped out on the Breadboard pins.
@@ -53,7 +52,7 @@ Time for the RGB Filter Calibration test next!
 
 **Total time spent: 2h**
 
-# November 25, 2026: 2 - PreLiminary Colour Filter Response Test
+# August 20, 2026: 2 - PreLiminary Colour Filter Response Test
 
 ## **Data**
 Pre-Liminary Colour Filter Response Test
@@ -99,7 +98,6 @@ LDR Responses (As reported by the Arduino Nano's ADC):
 
 
 ## **Notes:**
-**(Date: 20th of August, 2026)**
 
 So, In this test, I had to measure the response of a chosen LDR (In this case LDR #5 from the previous Experiment) Illuminated by my Phone's Screen displaying Pure Colours at full Brightness through the Red, Green and Blue Gelatin Colour Filters.
 I used a 10KΩ resistor to act as a voltage divider for A2 pin on the Nano (The Circuit Schematic is almost the same as the Last experiment's one)
@@ -135,9 +133,8 @@ And Thankfully it did! So, Now we can calibrate some weights in the Code now to 
 
 **Total time spent: 4h**
 
-# November 25, 2026: My reasoning behind choosing LDRs as the Main Light Sensors
+# August 20, 2026: My reasoning behind choosing LDRs as the Main Light Sensors
 
-(Date: August 20th, 2026)
 So, For SPI, I had 3 options of Light sensors available:
 
 1. CdS Light Dependent Resistors
@@ -189,8 +186,8 @@ I have Tried to operate the Servo Motors using just the Small Arduino Nano's Pow
 
 I am so excited to finally make this Project actually Move!
 
-![](https://fabricate.hackclub-assets.com/43b4f6ed6402ddfb7116f80ae99b093dd9a7f20eb3515a5412096c06d92a185d/image-png/SPI%20Design%20%232.png)
-![](https://fabricate.hackclub-assets.com/36415e7274e3941df4433019f30d7ed5f906a3905d175570399502be2cffde9e/image-png/SPI%20Design.png)
+![](https://cdn.hackclub.com/01a2217e-c754-7f30-aa73-8ac4662a8afe/SPI_Design(Crude_Model)_%231.png)
+![](https://cdn.hackclub.com/01a2217e-c891-79b4-9f7b-81b7d6289f13/SPI_Design(Crude_Model)_%232.png)
 ![](https://fabricate.hackclub-assets.com/f7db8fd5b52d60747ab6ce839776915a1ec9ef3d29785ed9ad200fda4ba060b1/image-png/Screenshot%202026-11-25%20173330.png)
 
 **Total time spent: 5h**

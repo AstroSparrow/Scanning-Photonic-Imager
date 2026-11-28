@@ -40,10 +40,32 @@ Fun fact: I came up with the name Scanning Photonic Imager by basically combinin
 (I apologize for the long yap of a Backstory i just unleashed here btw)
 
 ----
+## How SPI Works
+- The main Light sensing is done by an Array of LDR's. There will be (Current Plan) 7 LDRs. 2 Red, 2 Green, 2 Blue and 1 Luminance (Colour Neutral LDRs to judge overallExposure)
+
+- The Computer and Nano will be talking continuously. The computer will send a defined set of Co-ordinates/Servo Angles calculated by user defined Parameters like Image Resolution (For ex. 16x16/32x32).
+The computer further will send Servo Motor angles (According to the Resolution and some other Pre-Defined Parameters) to the Nano
+The Nano will then move the Servos according to the Specific angles
+
+- Once the Servos have reached the defined Position, The Nano will take 200 Voltage ADC Readings from each LDR and then Average them out into 1 Reading per LDR.
+The Nano will send all the 8 Readings of the LDRs to the Computer (From the Averaged 8 LDRs).
+
+- The Computer then will write the recieved data into a CSV file
+The Computer will then command the Nano to move the Servos to the Next position to "Paint" the next Pixel in the image
+
+- This process will loop until all the Pixels of the defined image are Painted
+
+- After the "Painting" process is complete, The Nano will send the 'Image Complete' signal to the Computer.
+The Computer will then use Python and Pillow (A Python Library) to "Paint" an image pixel-by-pixel using the data in the CSV file and then will output a .jpg/.png file.
+
+
+And we will (Hopefully) have an Image of the Scene using just LDRs as the Light Sensors!! :D
+
+
 ## Repo Index
 - **You can get more info on the project from the `Docs` folder**
 - **All the code files used in this Project are available in the `Code` folder**
-- **Documentation and Results from the completed "Tests" are available in the `Experiments` folder**
+- **Experiment Notes, Experiment Results, Circut Diagrams, etc from the completed "Tests" are available in the `Experiments` folder**
 
 
 ## Currently Working on
