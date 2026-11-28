@@ -50,6 +50,9 @@ Time for the RGB Filter Calibration test next!
 ![](https://fabricate.hackclub-assets.com/047b6036fccc5513bfea331b0f1c2c00d15968a75abbc6e9870b86db2254a27d/image-jpeg/Test%20in%20Progress.jpg)
 ![](https://fabricate.hackclub-assets.com/c56b3a330dda3de506f4e756597cd7d0d6d5bdc402c7dda2143a36564d504f04/image-jpeg/Test%20Setup.jpg)
 
+
+**0h - 1:30h: Data Collection and Experimentation**
+**1:30h - 2h: Note/Journal Writing**
 **Total time spent: 2h**
 
 # August 20, 2026: 2 - PreLiminary Colour Filter Response Test
@@ -131,6 +134,9 @@ And Thankfully it did! So, Now we can calibrate some weights in the Code now to 
 ![](https://fabricate.hackclub-assets.com/508ff26cd609711f19e9681c75f32579bcf1259bbb21403d76b639358afc56bd/image-jpeg/Colour%20Filter%20Test%20Setup.jpg)
 ![](https://fabricate.hackclub-assets.com/b02618a27b92e32b2736c69080ceb7e749324e3a3003a90baa29df337a312598/image-jpeg/RGB%20Filters%20on%20my%20Tab%27s%20Screen.jpg)
 
+**0h - 2h: Fighting with the Colour Filters and the LDRs to get them to work correctly**
+**2h - 3h: Finally got the Experiment working and started collecting the Data**
+**3h - 4h: Reviewing the Data, Analysing the Pattern, Getting Unusually Excited that it's working! And Wrote the Note/Journal**
 **Total time spent: 4h**
 
 # August 20, 2026: My reasoning behind choosing LDRs as the Main Light Sensors
@@ -161,6 +167,7 @@ I plan to give a shot with LED's once again in the future tho!
 
 ![](https://fabricate.hackclub-assets.com/faf08f91396891e9cde28c9e9ab6858c127794f8ae843a6d1d5e32718447c843/image-jpeg/IMG_20261125_103658.jpg)
 
+**0h - 1h: Writing/Explaining the Journal/Reasoning**
 **Total time spent: 1h**
 
 # November 25, 2026: How i Plan to use a single set of LDR's as a Image Sensor
@@ -190,4 +197,7 @@ I am so excited to finally make this Project actually Move!
 ![](https://cdn.hackclub.com/01a2217e-c891-79b4-9f7b-81b7d6289f13/SPI_Design(Crude_Model)_%232.png)
 ![](https://fabricate.hackclub-assets.com/f7db8fd5b52d60747ab6ce839776915a1ec9ef3d29785ed9ad200fda4ba060b1/image-png/Screenshot%202026-11-25%20173330.png)
 
+**0h - 2h (August 26, 2026): Trying and failing to drive the Servo Motors using the Nano (and getting so frustrated that i wanted to quit the project entirely). Ended up Ordering a DC-DC Buck Converter from Robocraze in the end**
+**2h - 4h (August 31, 2026): Recieved the Ordered DC-DC Buck Converter, Experimented with it to run/drive the Servo Motors. Excited beyond belief that it finally worked!**
+**4h - 5h (November 25, 2026): Writing the Journal Entry for the entire Endeavour**
 **Total time spent: 5h**
